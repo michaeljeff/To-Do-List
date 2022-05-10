@@ -1,0 +1,51 @@
+<h1>To Do List</h1>
+
+<div class="card">
+    <div class="card-body">
+        <form action="/todo/add" method="post">
+            <div class="form-group">
+                <label for="name">Insert a new task</label>
+                <input type="text" class="form-control" name="name" required autofocus>
+            </div>
+            <input type="submit" class="btn btn-primary" name="submit" value="Save">
+        </form>
+    </div>
+</div>
+
+<br>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Task name</th>
+            <th></th>
+        </tr>
+        <% if (ilocals.todoList || todoList.length === 0) { %>
+            <tr>
+                <td colspan="4" class="text-center">
+                    No tasks
+                </td>
+            </tr>
+      <%  } else { %>
+        <% todoList.forEach((task, index) => { %>
+            <tr>
+                <td><%- index + 1 %></td>
+                <td><%- task %></td>
+                <td>
+                    <form action="/todo/done/<%- index %>" method="post">
+                        <button type="submit" class="btn btn-outline-success btn-sn">
+                            <i data-feather="check"></i> Done
+                        </button>
+                    </form>
+                </td>
+            </tr>
+         <% )) %>
+         <% ) %>    
+    </thead>
+</table>
+
+<script src="https://unpkg.com/feather-icons"></script>
+<script>feather.replace()</script>
+
+<%- contentFor('title') %>
+To Do List
