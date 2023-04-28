@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+ <category>
+   <pattern>Tidak TAhu</pattern>
+   <template>Tidak Tahu<br/><srai>*</srai></template>
+ </category>
+ <category>
+   <pattern>*</pattern>
+   <template>
+    Pilih Kategori?
+    <button><text>Olahraga</text><postback>Olahraga</postback></button>
+    <button><text>Buah</text><postback>WarnaBuah1</postback></button>
+   </template>
+ </category>
+ <category>
+   <pattern>Olahraga</pattern>
+   <template>
+    Pakai Raket?
+    <button><text>Ya</text><postback>Ya Raket</postback></button>
+    <button><text>Tidak</text><postback>Tidak Raket</postback></button>
+   </template>
+ </category>
+ <category>
+   <pattern>Ya Raket</pattern>
+   <template>
+    Alat Lain?            
+   <button><text>Kok</text><postback>Bulutangkis</postback></button>
+   <button><text>Bola</text><postback>Tenis</postback></button>
+   <button><text>Lainnya</text><postback>Tidak Tahu</postback></button>
+   </template>
+ </category>
+ <category>
+   <pattern>Bulutangkis</pattern>
+   <template>Bulutangkis<br/><srai>*</srai></template>
+ </category>
+ <category>
+   <pattern>Tenis</pattern>
+   <template>Tenis<br/><srai>*</srai></template>
+ </category>
+ <category>
+   <pattern>Tidak Raket</pattern>
+   <template>
+    Menggunakan salah satu alat berikut?            
+   <button><text>gawang</text><postback>Sepakbola</postback></button>
+   <button><text>net</text><postback>BolaVoli</postback></button>
+   <button><text>keranjang</text><postback>Bolabasket</postback></button>
+   </template>
+ </category>
+ <category>
+   <pattern>Bulutangkis</pattern>
+   <template>Bulutangkis<br/><srai>*</srai></template>
+ </category>
+ <category>
+   <pattern>Tenis</pattern>
+   <template>Tenis<br/><srai>*</srai></template>
+ </category>
+ <category>
+   <pattern>Sepakbola</pattern>
+   <template>Sepak bola<br/><srai>*</srai></template>
+ </category>
+ <category>
+   <pattern>BolaVoli</pattern>
+   <template>Bola Voli<br/><srai>*</srai></template>
+ </category>
+ <category>
+   <pattern>Bolabasket</pattern>
+   <template>Bola Basket<br/><srai>*</srai></template>
+ </category>
+ <category>
+   <pattern>WarnaBuah1</pattern>
+   <template>
+    Apa warna buahnya?
+    <button><text>Merah</text><postback>BuahMerah</postback></button>
+    <button><text>Kuning</text><postback>BuahKuning</postback></button>
+    <button><text>Warna Lain</text><postback>WarnaBuah2</postback></button>
+   </template>
+ </category>
+ <category>
+   <pattern>WarnaBuah2</pattern>
+   <template>
+    Apa warna buahnya?
+    <button><text>Jingga/Orange</text><postback>BuahJingga</postback></button>
+    <button><text>Ungu</text><postback>BuahUngu</postback></button>
+    <button><text>Warna Lain</text><postback>WarnaBuah3</postback></button>
+   </template>
+ </category>
+  <category>
+   <pattern>WarnaBuah3</pattern>
+   <template>
+    Apa warna buahnya?
+    <button><text>Hijau</text><postback>BuahHijau</postback></button>
+    <button><text>Warna yang Lain</text><postback>Tidak Tahu</postback></button>
+   </template>
+ </category>
+ <category>
+   <pattern>BUahMerah</pattern>
+   <template>Apel, Semangka, Strawberry<br/><srai>*</srai></template>
+ </category>
+ <category>
+   <pattern>BuahKuning</pattern>
+   <template>Nanas, Pisang<br/><srai>*</srai></template>
+ </category>
+ <category>
+   <pattern>BuahJingga</pattern>
+   <template>Jeruk<br/><srai>*</srai></template>
+ </category>
+ <category>
+   <pattern>BuahUngu</pattern>
+   <template>Anggur<br/><srai>*</srai></template>
+ </category>
+ <category>
+   <pattern>BuahHijau</pattern>
+   <template>Alpukat<br/><srai>*</srai></template>
+ </category>
+</aiml>
